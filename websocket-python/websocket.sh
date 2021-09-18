@@ -6,7 +6,7 @@ echo Cek Hak Akses...
 sleep 0.5
 cd
 #Buat name user github dan nama folder
-GitUser="syapik96"
+GitUser="zahwanugrah"
 namafolder="websocket-python"
 #wget https://github.com/${GitUser}/${namafolder}/
 
