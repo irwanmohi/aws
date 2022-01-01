@@ -21,7 +21,7 @@ apt install -y bzip2 gzip coreutils screen curl
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 
-GitUser="syapik96"
+GitUser="irwanmohi"
 #wget https://github.com/${GitUser}/
 wget https://raw.githubusercontent.com/${GitUser}/aws/main/panel-domain/cff.sh && chmod +x cff.sh && ./cff.sh
 wget https://raw.githubusercontent.com/${GitUser}/aws/main/add-host.sh && chmod +x add-host.sh && screen -S add-host.sh ./add-host.sh
