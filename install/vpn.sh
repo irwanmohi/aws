@@ -85,8 +85,8 @@ END
 # Buat config server TCP 1197
 
 cd /etc/openvpn
-cat > /etc/openvpn/server-tcp-1197.conf <<-END
-port 1197
+cat > /etc/openvpn/server-tcp-1720.conf <<-END
+port 1720
 proto tcp
 dev tun
 ca ca.crt
@@ -105,7 +105,7 @@ keepalive 5 30
 comp-lzo
 persist-key
 persist-tun
-status server-tcp-1197.log
+status server-tcp-1720.log
 verb 3
 END
 
@@ -161,14 +161,14 @@ cd clientconfig
 
 # Buat config client TCP 1197
 cd /etc/openvpn
-cat > /etc/openvpn/client-tcp-1197.ovpn <<-END
+cat > /etc/openvpn/client-tcp-1720.ovpn <<-END
 ############## WELCOME TO ###############
 ########## syapik96 ###########
 ####### DONT FORGET TO SUPPORT US #######
 client
 dev tun
 proto tcp
-remote xxxxxxxxx 1197
+remote xxxxxxxxx 1720
 resolv-retry infinite
 route-method exe
 nobind
@@ -293,11 +293,11 @@ cd
 
 #1197
 # masukkan certificatenya ke dalam config client TCP 1197
-echo '<ca>' >> /etc/openvpn/client-tcp-1197.ovpn
-cat /etc/openvpn/ca.crt >> /etc/openvpn/client-tcp-1197.ovpn
-echo '</ca>' >> /etc/openvpn/client-tcp-1197.ovpn
+echo '<ca>' >> /etc/openvpn/client-tcp-1720.ovpn
+cat /etc/openvpn/ca.crt >> /etc/openvpn/client-tcp-1720.ovpn
+echo '</ca>' >> /etc/openvpn/client-tcp-1720.ovpn
 # Copy config OpenVPN client ke home directory root agar mudah didownload ( TCP 1197 )
-cp /etc/openvpn/client-tcp-1197.ovpn /home/vps/public_html/client-tcp-1197.ovpn
+cp /etc/openvpn/client-tcp-1720.ovpn /home/vps/public_html/client-tcp-1720.ovpn
 
 #1194
 # masukkan certificatenya ke dalam config client TCP 1194
