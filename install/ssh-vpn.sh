@@ -3,7 +3,7 @@
 # 
 # ==================================================
 
-GitUser="syapik96"
+GitUser="irwanmohi"
 #wget https://github.com/${GitUser}/
 # initializing var
 export DEBIAN_FRONTEND=noninteractive
@@ -17,13 +17,13 @@ ver=$VERSION_ID
 # edit bwh, isikan nama domain anda
 # detail nama perusahaan
 
-country=SG
-state=Singapore
-locality=Singapore
-organization=Trickinternetvpns.ml
-organizationalunit=Trickinternetvpns VPN Service
-commonname=trickinternetvpns.ml
-email=akuwsyah04@gmail.com
+country=MY
+state=SELANGOR
+locality=GOMBAK
+organization=AIDAN TECH
+organizationalunit=PLATFORM TEAM
+commonname=vpn.aidan.my
+email=irwan@aidan.my
 
 # simple password minimal
 wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/${GitUser}/aws/main/password"
