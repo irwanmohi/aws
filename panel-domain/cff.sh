@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /root
-rm /root/mail.confconf 
+rm /root/mail.conf
 figlet "Cloudflare" | lolcat
 
 echo "Name : Add ID Cloudlare " | lolcat
