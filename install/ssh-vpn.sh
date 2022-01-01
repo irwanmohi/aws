@@ -93,7 +93,7 @@ echo "clear" >> .profile
 echo "neofetch" >> .profile
 echo "echo by PrinceNewbie" >> .profile
 
-GitUser="syapik96"
+GitUser="irwanmohi"
 #wget https://github.com/${GitUser}/
 
 # install webserver
@@ -207,7 +207,7 @@ cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
 sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
 
-GitUser="syapik96"
+GitUser="irwanmohi"
 #OpenVPN
 wget https://raw.githubusercontent.com/${GitUser}/aws/main/install/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
@@ -246,7 +246,7 @@ echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 cd
 apt install -y libxml-parser-perl
 
-GitUser="syapik96"
+GitUser="irwanmohi"
 # banner /etc/issue.net
 wget -O /etc/issue.net "https://raw.githubusercontent.com/${GitUser}/aws/main/bannerssh.conf"
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
@@ -273,7 +273,7 @@ iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save
 netfilter-persistent reload
 
-GitUser="syapik96"
+GitUser="irwanmohi"
 # download script
 cd /usr/bin
 wget -O add-host "https://raw.githubusercontent.com/${GitUser}/aws/main/add-host.sh"
