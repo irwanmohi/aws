@@ -52,7 +52,7 @@ sudo gem install lolcat
 cat <<EOF > /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
-Documentation=https://trickinternetvpns.ml
+Documentation=https://aidan.my
 [Service]
 Type=oneshot
 ExecStart=/bin/bash /etc/set.sh
