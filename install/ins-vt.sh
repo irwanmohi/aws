@@ -8,12 +8,12 @@ apt -y install chrony
 timedatectl set-ntp true
 systemctl enable chronyd && systemctl restart chronyd
 systemctl enable chrony && systemctl restart chrony
-timedatectl set-timezone Asia/Jakarta
+timedatectl set-timezone Asia/Kuala_Lumpur
 chronyc sourcestats -v
 chronyc tracking -v
 date
 # install v2ray
-GitUser="syapik96"
+GitUser="irwanmohi"
 #wget https://github.com/${GitUser}/
 wget https://raw.githubusercontent.com/${GitUser}/aws/main/install/go.sh && chmod +x go.sh && ./go.sh
 rm -f /root/go.sh
